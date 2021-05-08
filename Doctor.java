@@ -35,7 +35,7 @@ public String getYearsExperiance() { //This method creates a condition to determ
 //we now call our created objects to the toString method, it will out put them each in the below sequence 
 public String toString() {
 	 String output = "The Doctor's height is: " + height + " feet tall \n";
-	 output += "The Doctor's Hair colour is: " + hairColour + "\n";
+	 output += "The Doctor's Hair colour is: " + getColor() + "\n"; // Hair color method added 
 	 output += "Is this Doctor over 18: " + over18 + "\n";
 	 output += "This Doctor has " + yearsExperiance + " years experience \n";
 	 output += "So this makes this Doctor a:" + getYearsExperiance(); // this is where we call our Get years Experience method to display the rank
