@@ -4,8 +4,8 @@ public class Doctor extends Person {// we are extending person with a doctor per
   public String Ranking;
   public int yearsExperiance;
 	 
-  public Doctor(String Ranking, int yearsExperiance, int height, String hairColour, boolean over18) { // in order to use the extends of person we need to add in the Person Attributes into our construtors including our Doctor attributes 
-		super(height, hairColour, over18);//we always need to call  the super values first in order. if i add it after my doctor code it will not work.
+  public Doctor(String Ranking, int yearsExperiance, int height, String hairColour, boolean ageIsOver18) { // in order to use the extends of person we need to add in the Person Attributes into our construtors including our Doctor attributes 
+		super(height, hairColour, ageIsOver18);//we always need to call  the super values first in order. if i add it after my doctor code it will not work.
 		this.Ranking = Ranking; // we now set the constuctor with the correct values for doctor
 		this.yearsExperiance = yearsExperiance; 
 	}
@@ -36,7 +36,7 @@ public String getYearsExperiance() { //This method creates a condition to determ
 public String toString() {
 	 String output = "The Doctor's height is: " + height + " feet tall \n";
 	 output += "The Doctor's Hair colour is: " + getColor() + "\n"; // Hair color method added 
-	 output += "Is this Doctor over 18: " + over18 + "\n";
+	 output += "Is this Doctor over 18: " + ageIsOver18 + "\n";
 	 output += "This Doctor has " + yearsExperiance + " years experience \n";
 	 output += "So this makes this Doctor a:" + getYearsExperiance(); // this is where we call our Get years Experience method to display the rank
 	

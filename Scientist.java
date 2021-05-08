@@ -4,8 +4,8 @@ public class Scientist extends Person {// we are extending person with a scienti
 public String labCoat; // we set the Scientists attributes and they must be called before our constructor, or else it will not work
 public String typeScientist;
 	
- public Scientist(String labCoat, String typeScientist, int height, String hairColour, boolean over18) { // in order to use the extends of person we need to add in the Person Attributes into our construtors including our Scientist attributes 
-		super(height, hairColour, over18);//we always need to call  the super values first in order. if i add it after my scientist code it will not work.
+ public Scientist(String labCoat, String typeScientist, int height, String hairColour, boolean ageIsOver18) { // in order to use the extends of person we need to add in the Person Attributes into our construtors including our Scientist attributes 
+		super(height, hairColour, ageIsOver18);//we always need to call  the super values first in order. if i add it after my scientist code it will not work.
 		
 		this.labCoat = labCoat; // we now set the constuctor with the correct values for scientist
 		this.typeScientist = typeScientist; 
@@ -38,7 +38,7 @@ public String typeScientistByCoat() { //This method creates a condition to deter
 public String toString() {
 	 String output = "Scientist's height is: " + height + " feet tall \n";
 	 output += "The Scientist's Hair colour is: " + getColor() + "\n"; // here we are calling the Hair color method
-	 output += "Is this Scientist over 18: " + over18 + "\n";
+	 output += "Is this Scientist over 18: " + ageIsOver18 + "\n";
 	 output += "The Scientists Lab coat colour is: " + labCoat + "\n";
 	 output += "So this makes this Scientist a:" + typeScientistByCoat();// here we are calling the method for the type of sceintist
 	
