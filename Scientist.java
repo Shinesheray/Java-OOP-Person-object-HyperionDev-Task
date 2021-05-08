@@ -37,7 +37,7 @@ public String typeScientistByCoat() { //This method creates a condition to deter
 //we now call our created objects in out to String method, it will out put them each in the below sequence 
 public String toString() {
 	 String output = "Scientist's height is: " + height + " feet tall \n";
-	 output += "The Scientist's Hair colour is: " + hairColour + "\n";
+	 output += "The Scientist's Hair colour is: " + getColor() + "\n"; // here we are calling the Hair color method
 	 output += "Is this Scientist over 18: " + over18 + "\n";
 	 output += "The Scientists Lab coat colour is: " + labCoat + "\n";
 	 output += "So this makes this Scientist a:" + typeScientistByCoat();// here we are calling the method for the type of sceintist
