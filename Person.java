@@ -4,13 +4,13 @@ class Person { // this is the class name person as a public class
 	// here are the persons Attibutes  we save them as public final to show that they are unchanged values 
 	public final int height; 
 	public final String hairColour;
-	public final boolean over18;
+	public final boolean ageIsOver18; // I updated the age varible to be more meaing full
 	
 	// this is the constructor for the Person attributes 
-	public Person (int height, String hairColour, boolean over18) {
+	public Person (int height, String hairColour, boolean ageIsOver18) {
 			this.height = height; // this is for the persons height
 			this.hairColour = hairColour; // this string is the hair color string for the person
-			this.over18 = over18; // boolean for if the Person is over 18 or not
+			this.ageIsOver18 = ageIsOver18; // boolean for if the Person is over 18 or not
 	}
 	
 	public String getColor() { // For my Task 16 update I added a getter for the first Issue
